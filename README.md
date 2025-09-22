@@ -1,2 +1,228 @@
 # Site-mushmc-Clan-667
 participe do clan e prencha seu formulario
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário 667</title>
+  <style>
+    animado {
+      width: 200px;
+      height: 200px;
+      border-radius: 12px;
+      animation: mudarcor 4s infinite alternate;
+    }
+
+    @keyframees mudarcor {
+      0% { background-color: #667eea; }
+      50% { background-color: #764ba2; }
+      100% { background-color: #ff6b6b; }
+      
+    }
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffffff, #002a6e);
+      color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+      <img src="https://cdn.discordapp.com/attachments/1418927263835226176/1419093832179650640/raw.png?ex=68d27bdf&is=68d12a5f&hm=f50c87fd239d75357319fadbe86c84b4ad5fa1b35eb8851a2811c2cc923a5e47&"
+    }
+    .container {
+      background: #f7f7f710;
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 30px;
+      max-width: 700px;
+      width: 100%;
+      box-shadow: 0 8px 25px 
+    }
+    h1 {
+      text-align: center;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 13px 0 6px;
+      font-weight: 500;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      margin-bottom: 15px;
+      background: #cccccc57;
+      color: #f8fafc;
+      font-size: 15px;
+    }
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+      margin-right: 7px;
+    }
+    button {
+      background: linear-gradient(90deg, #ffffff, #0b2a5c);
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      transition: 0.3s ease;
+     animation: mudarcor 4s infinite alternate;
+      
+    }
+    button:hover {
+      background: linear-gradient(90deg, #164e8f, #ffffff);
+      transform: scale(1.02);
+    }
+    button:disabled {
+      background: #ffffff;
+      cursor: not-allowed;
+    }
+    #status {
+      margin-top: 15px;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Formulário 667</h1>
+    <form id="form">
+      <label>👤 Qual seu nome no Discord?</label>
+      <input type="text" id="discordNome" required>
+
+      <label>1️⃣ Você já foi banido do MushMC?</label>
+      <label><input type="radio" name="banido" value="Sim"> Sim</label>
+      <label><input type="radio" name="banido" value="Não"> Não</label>
+
+      <label>2️⃣ Qual seu gênero?</label>
+      <label><input type="radio" name="genero" value="Feminino"> Feminino</label>
+      <label><input type="radio" name="genero" value="Masculino"> Masculino</label>
+      <label><input type="radio" name="genero" value="Não Binário"> Não Binário</label>
+
+      <label>3️⃣ Qual sua idade?</label>
+      <input type="text" id="idade">
+
+      <label>4️⃣ Já entrou em outro clã? Se sim, por que saiu?</label>
+      <input type="text" id="outroClan">
+
+      <label>5️⃣ Já jogou CxC? Se sim quantas partidas?</label>
+      <input type="number" id="cxc">
+
+      <label>6️⃣ Quais pontes você sabe?</label>
+      <label><input type="checkbox" name="pontes" value="God"> God</label>
+      <label><input type="checkbox" name="pontes" value="Ninja"> Ninja</label>
+      <label><input type="checkbox" name="pontes" value="Telly"> Telly</label>
+      <label><input type="checkbox" name="pontes" value="Moonwalk"> Moonwalk</label>
+      <label><input type="checkbox" name="pontes" value="Breezily"> Breezily</label>
+      <label><input type="checkbox" name="pontes" value="Normal"> Normal</label>
+      <label><input type="checkbox" name="pontes" value="Speed Ninja"> Speed Ninja</label>
+      <input type="text" id="pontes_outra" placeholder="Outra...">
+
+      <label>7️⃣ Há quanto tempo joga Minecraft?</label>
+      <input type="text" id="tempo">
+
+      <label>8️⃣ Joga Original ou Pirata?</label>
+      <label><input type="radio" name="pirata" value="Original"> Original</label>
+      <label><input type="radio" name="pirata" value="Pirata"> Pirata</label>
+
+      <label>9️⃣ Qual Tag Você Tem?</label>
+      <label><input type="checkbox" name="tag" value="Ultra+"> Ultra+</label>
+      <label><input type="checkbox" name="tag" value="Ultra"> Ultra</label>
+      <label><input type="checkbox" name="tag" value="Vip"> Vip</label>
+      <label><input type="checkbox" name="tag" value="2025"> 2025</label>
+      <input type="text" id="tag_outra" placeholder="Outra...">
+
+      <label>🔟 Qual seu nível?</label>
+      <label><input type="radio" name="nivel" value="20+"> 20+</label>
+      <label><input type="radio" name="nivel" value="30+"> 30+</label>
+      <label><input type="radio" name="nivel" value="40+"> 40+</label>
+
+      <label>⏰ Qual melhor horário pra você jogar?</label>
+      <textarea id="horarios"></textarea>
+
+      <button type="submit" id="submit">🚀 Enviar</button>
+    </form>
+    <div id="status"></div>
+  </div>
+
+  <script>
+    // 🔒 Webhook só no código (não aparece no HTML)
+    const WEBHOOK_URL = "https://discord.com/api/webhooks/1419636662866284595/lzkTa-HjIxIgaxCAbiJkluKyUR7LDhUcp_wGh8PouBKnKyJr3q2akH8SYcSafvW44GBr";
+
+    const form = document.getElementById('form');
+    const statusEl = document.getElementById('status');
+    const btn = document.getElementById('submit');
+
+    function getCheckedValues(name) {
+      return Array.from(document.querySelectorAll(`input[name="${name}"]:checked`)).map(i => i.value);
+    }
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      btn.disabled = true;
+      statusEl.textContent = "⏳ Enviando please...";
+
+      const payload = {
+        nomeDiscord: document.getElementById('discordNome').value,
+        banido: document.querySelector('input[name="banido"]:checked')?.value || "Não informado",
+        genero: document.querySelector('input[name="genero"]:checked')?.value || "Não informado",
+        idade: document.getElementById('idade').value || "Não informado",
+        outroClan: document.getElementById('outroClan').value || "Nenhum",
+        cxc: document.getElementById('cxc').value || "0",
+        pontes: getCheckedValues('pontes').join(", ") || "Nenhuma",
+        pontes_outra: document.getElementById('pontes_outra').value || "Nenhuma",
+        tempo: document.getElementById('tempo').value || "Não informado",
+        pirata: document.querySelector('input[name="pirata"]:checked')?.value || "Não informado",
+        tags: getCheckedValues('tag').join(", ") || "Nenhuma",
+        tag_outra: document.getElementById('tag_outra').value || "Nenhuma",
+        nivel: document.querySelector('input[name="nivel"]:checked')?.value || "Não informado",
+        horarios: document.getElementById('horarios').value || "Não informado"
+      };
+
+      const embed = {
+        title: "📥 Nova inscrição - Formulário 667",
+        color: 0x3b82f6,
+        fields: Object.entries(payload).map(([k,v]) => ({
+          name: k.charAt(0).toUpperCase() + k.slice(1),
+          value: v.toString(),
+          inline: false
+        })),
+        footer: { text: "Sistema de Logs - Clan 667" },
+        timestamp: new Date()
+      };
+
+      try {
+        const res = await fetch(WEBHOOK_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ username: "Formulário 667", embeds: [embed] })
+        });
+
+        if (res.ok) {
+          statusEl.textContent = "✅ Enviado com sucesso!";
+          form.reset();
+          statusEl.textContent = "✨Formulario bem socedido"
+        } else {
+          statusEl.textContent = "❌ Erro ao enviar.";
+          console.error(await res.text());
+        }
+      } catch(err) {
+        statusEl.textContent = "⚠️ Falha de conexão.";
+        console.error(err);
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
+
